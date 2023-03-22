@@ -36,7 +36,8 @@ let postEl = "";
 let likes = [];
 let hasLiked = [];
 for (let i = 0; i < posts.length; i++) {
-  postEl += `<div class="person">
+  postEl += `<div class="post-wrapper">
+  <div class="person">
           <img src=${posts[i].avatar} class="avatar-img" />
           <div class="person-info">
             <h4>${posts[i].name}</h4>
@@ -52,6 +53,7 @@ for (let i = 0; i < posts.length; i++) {
         <div class="likes-container"><span class="likes-number">${posts[i].likes}</span> likes</div>
         <div class="likes-container">
           <span class="likes-username">${posts[i].username}</span> ${posts[i].comment}
+        </div>
         </div>`;
 
   postPlace.innerHTML = postEl;

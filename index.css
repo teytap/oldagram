@@ -16,11 +16,8 @@ header {
   justify-content: space-between;
   height: 67px;
   padding: 15px;
-  border-bottom: 1px solid #c6c6c6;
 }
-section {
-  padding-bottom: 20px;
-}
+
 .avatar-img {
   border-radius: 50%;
   width: 46px;
@@ -49,4 +46,7 @@ section {
 .likes-number,
 .likes-username {
   font-weight: bold;
+}
+.post-wrapper {
+  border-bottom: 30px solid #ededed;
 }
